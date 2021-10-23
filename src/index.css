@@ -5,9 +5,129 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(31, 31, 31);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+   
+	}
+	100% {
+		opacity: 1;
+  
+	}
+}
+
+.front-page-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.front-page-title{
+  font-weight:lighter;
+  font-size: 15vh;
+  color: white;
+}
+
+.header-container {
+  list-style: none;
+  animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+.header-list {
+  list-style: none;
+}
+
+.header-items-title {
+  display: inline-block;
+  position: relative;
+  right: 29vh;
+  color: white;
+}
+
+.header-items-container {
+  display: inline-block;
+  position: relative;
+  left: 31vh;
+}
+
+.header-items {
+  display: inline-block;
+  text-align: center;
+  padding: 2vh;
+  text-decoration: none;
+  color: white;
+}
+
+.header-h1 {
+  font-weight: lighter;
+  font-size: 7vh;
+}
+
+.header-p {
+  font-weight: lighter;
+}
+
+.artwork-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+.artwork-wrapper :nth-child(1) {
+  animation-delay: 10s;
+}
+
+.artwork-container {
+  overflow: none;
+  object-fit: cover;
+}
+
+.artwork-container:hover {
+  transform: scale(1.1);
+}
+
+.artwork-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-picture {
+  height: 90vh;
+}
+
+.artwork-modal {
+  width: 100vh;
+  height: 80vh;
+  overflow: none;
+}
+
+.artwork {
+  width: 25vh;
+  height: 15vh;
+  object-fit: cover;
+  overflow: none;
 }
