@@ -21,7 +21,7 @@ export default function Picture(image, index) {
       </button>
       <Modal className="modal" open={open} key={index} onClose={handleClose}>
         <div className="modal-picture">
-          <img alt="artwork" className="modal-picture" src={"%PUBLIC_URL%" + image.image}></img>
+          <img alt="artwork" className="modal-picture" src={image.image}></img>
         </div>
       </Modal>
     </div>

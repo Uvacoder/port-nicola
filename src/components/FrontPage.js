@@ -6,15 +6,15 @@ import Button from "@mui/material/Button";
 
 import BackgroundSlider from "react-background-slider";
 
-const image1 = "%PUBLIC_URL%/pictures/1.jpg";
-const image2 = "%PUBLIC_URL%/pictures/7.jpg";
-const image3 = "%PUBLIC_URL%/pictures/34.jpg";
-const image4 = "%PUBLIC_URL%/pictures/18.jpg";
-const image5 = "%PUBLIC_URL%/pictures/1a.jpg";
-const image6 = "%PUBLIC_URL%/pictures/53.jpg";
-const image7 =  "%PUBLIC_URL%/pictures/82.jpg";
-const image8 =  "%PUBLIC_URL%/pictures/39.jpg";
-const image9 =  "%PUBLIC_URL%/pictures/19.jpg";
+const image1 = "./pictures/1.jpg";
+const image2 = "./pictures/7.jpg";
+const image3 = "./pictures/34.jpg";
+const image4 = "./pictures/18.jpg";
+const image5 = "./pictures/1a.jpg";
+const image6 = "./pictures/53.jpg";
+const image7 =  "./pictures/82.jpg";
+const image8 =  "./pictures/39.jpg";
+const image9 =  "./pictures/19.jpg";
 
 const theme = createTheme({
   palette: {
