@@ -3,7 +3,7 @@ import "./App.css";
 import Gallery from "./components/Gallery";
 import FrontPage from "./components/FrontPage";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
