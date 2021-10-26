@@ -131,3 +131,48 @@ code {
   object-fit: cover;
   overflow: none;
 }
+
+.about-page {
+
+}
+
+.about-flex-wrapper {
+  display: flex;
+  justify-content: center;
+  width: screen;
+  
+}
+
+.about-text-title {
+  color: white;
+  font-size: 7vh;
+  font-weight:lighter;
+}
+
+.about-text-container {
+  width: 30%;
+  font-size: 2vh;
+  letter-spacing: 0.2vh;
+  text-align: left;
+  /* margin-left: 5vh; */
+  margin-right: 10vh
+}
+
+.about-text {
+  color: white;
+  font-weight:lighter;
+}
+
+.carousel-container {
+  width: 30%;
+}
+
+.carousel {
+  width: 30%;
+
+}
+
+.carousel-image {
+
+}
+
