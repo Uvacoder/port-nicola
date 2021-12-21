@@ -247,11 +247,13 @@ bottom: 5vh;
 }
 
 .about-text-container {
+  position: relative;
   width: 30%;
   font-size: 1.5vh;
   letter-spacing: 0.2vh;
   text-align: left;
-  margin-right: 10vh
+  margin-right: 10vh;
+  top: 5em
 }
 
 .about-text {
