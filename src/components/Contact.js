@@ -12,11 +12,11 @@ export default function Contact() {
         <img alt="monkeys" className="contact-image" src="./pictures/1.jpg"/>
       </div>
       <div >
-        <p>For general enquiries, images of available works, and a price list, email me or contact me at: </p>
+        <p className="contact-p">For general enquiries, images of available works, and a price list, email me or contact me at: </p>
       </div>
       <div>
-        <p className="header-p">Email: nicola.nicholas@btinternet.com</p>
-        <p className="header-p">Number: 07711111111</p>
+        <p className="contact-p">Email: nicola.nicholas@btinternet.com</p>
+        <p className="contact-p">Number: 07711111111</p>
       </div>
       </div>
     </div>
