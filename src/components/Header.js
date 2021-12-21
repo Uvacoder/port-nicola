@@ -1,24 +1,68 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Header() {
+  const [about, setAbout] = useState(true);
+  const [gallery, setGallery] = useState(false);
+  const [contact, setContact] = useState(false);
+
+  const handleClick = (navigation) => {
+    if (navigation === "gallery") {
+      setGallery(true);
+      setAbout(false);
+      setContact(false);
+    }
+
+    if (navigation === "contact") {
+      setAbout(false);
+      setGallery(false);
+      setContact(true);
+    }
+
+    if (navigation === "about") {
+      setAbout(true);
+      setGallery(false);
+      setContact(false);
+    }
+  };
+
   return (
-    <div className="header-container">
-
-      <div className="header-items-title">
-        <h1 className="header-h1">Nicola Nicholas</h1>
-      </div>
-
-    <div className="header-items-container">
-
-      <div className="header-items">
-        <p className="header-p">Email: nicola.nicholas@btinternet.com</p>
-      </div>
-
-      <div className="header-items">
-        <p className="header-p">Number: 07711111111</p>
-      </div>
-      
-      </div>
+    <div>
+      <ul className="header-list-wrapper">
+        <li className="header-list-item">
+          <h1 className="header-h1">Nicola Nicholas</h1>
+        </li>
+        <div>
+        <li className="header-list-item">
+          <Link
+            to={"/about"}
+            className={about ? "header-link-active" : "header-link"}
+            onClick={() => handleClick("about")}
+          >
+            ABOUT
+          </Link>
+        </li>
+        <li className="header-list-item">
+          <Link
+            to={"/gallery"}
+            className={gallery ? "header-link-active" : "header-link"}
+            onClick={() => handleClick("gallery")}
+          >
+            GALLERY
+          </Link>
+        </li>
+        <li className="header-list-item">
+          <Link
+            to={"/contact"}
+            className={contact ? "header-link-active" : "header-link"}
+            onClick={() => handleClick("contact")}
+          >
+            CONTACT
+          </Link>
+        </li>
+        </div>
+      </ul>
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function About() {
     <div>
       <Header />
       <div className="about-page">
-      <div>
+      <div className="about-title-wrapper">
         <h2 className="about-text-title">About</h2>
       </div>
       <div className="about-flex-wrapper">
@@ -30,9 +30,7 @@ export default function About() {
             Butchers.
           </p>
         </div>
-        {/* <div className="carousel-about-page"> */}
           <CarouselConatiner />
-        {/* </div> */}
       </div>
     </div>
     </div>

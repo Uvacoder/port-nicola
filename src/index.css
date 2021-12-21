@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(255, 255, 255);
 }
 
 code {
@@ -14,14 +14,14 @@ code {
 }
 
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
+    0% {
+        opacity: 0;
    
-	}
-	100% {
-		opacity: 1;
+    }
+    100% {
+        opacity: 1;
   
-	}
+    }
 }
 
 .front-page-container {
@@ -37,56 +37,139 @@ code {
 }
 
 .header-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: screen;
+  color: rgb(0, 0, 0);
+}
+
+.header-list-wrapper {
+  color: rgb(0, 0, 0);
   list-style: none;
-  animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
+  margin: 0;
+  padding: 0;
+}
+
+.header-list-item {
+  display: inline-block;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+.header-list-item-active {
+  display: inline-block;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  color: rgb(255, 0, 0);
+}
+
+.header-link {
+  text-decoration: none;
+  color: black;
+}
+
+.header-link-active {
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+}
+
+.header-list-item-contact {
+  display: inline-block;
 }
 
 .header-list {
   list-style: none;
 }
 
-.header-items-title {
-  display: inline-block;
-  position: relative;
-  right: 29vh;
-  color: white;
-}
-
 .header-items-container {
-  display: inline-block;
-  position: relative;
-  left: 31vh;
+  color: rgb(0, 0, 0);
+  text-align: left;
 }
 
 .header-items {
-  display: inline-block;
-  text-align: center;
-  padding: 2vh;
+  text-align: left;
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .header-h1 {
   font-weight: lighter;
   font-size: 7vh;
+  text-align: left;
 }
 
-.header-p {
-  font-weight: lighter;
+.gallery-text-wrapper {
+  width: 50%;
+  margin: 0 auto;
 }
+
+.gallery-text-title {
+  color: rgb(0, 0, 0);
+  font-size: 6vh;
+  font-weight:lighter;
+  text-align: center;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5vh; 
+  margin-bottom: 5vh;
+}
+
+.button-break {
+  color: black;
+  font-size: 3vh;
+  font-weight: lighter;
+  margin-left: 2.1vh;
+  margin-right: 2.1vh;
+}
+
+.gallery-button {
+  position: relative;
+  top: 0.5vh;
+  background-color: transparent;
+  border: none;
+  font-size: 1.7vh;
+  font-weight: lighter;
+  letter-spacing: 0.2vh;
+  cursor: pointer;
+  color: rgb(114, 114, 114);
+}
+
+.gallery-button-active {
+  position: relative;
+  top: 0.5vh;
+  background-color: transparent;
+  border: none;
+  font-size: 1.7vh;
+  font-weight: lighter;
+  letter-spacing: 0.2vh;
+  cursor: pointer;
+  color: rgb(206, 0, 0);
+}
+
+.gallery-button:hover {
+  transform: scale(1.05);
+  color: black;
+}
+
 
 .artwork-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .artwork-wrapper :nth-child(1) {
@@ -96,10 +179,15 @@ code {
 .artwork-container {
   overflow: none;
   object-fit: cover;
+  opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
 }
 
 .artwork-container:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 
 .artwork-button {
@@ -107,7 +195,6 @@ code {
   border: none;
   cursor: pointer;
 }
-
 
 .modal {
   display: flex;
@@ -126,53 +213,185 @@ code {
 }
 
 .artwork {
-  width: 25vh;
-  height: 15vh;
+  width: 20vh;
+  height: 17.5vh;
   object-fit: cover;
   overflow: none;
+  margin-bottom: 1vh;
 }
 
 .about-page {
-
+position: relative;
+bottom: 5vh;
 }
 
 .about-flex-wrapper {
   display: flex;
   justify-content: center;
   width: screen;
-  
+}
+
+.about-title-wrapper {
+  margin-top: 10vh;
+  margin-bottom: 7vh;
 }
 
 .about-text-title {
-  color: white;
-  font-size: 7vh;
+  color: rgb(0, 0, 0);
+  font-size: 6vh;
   font-weight:lighter;
+}
+
+.about-text-gallery-wrapper {
+  margin: 0 auto;
 }
 
 .about-text-container {
   width: 30%;
-  font-size: 2vh;
+  font-size: 1.5vh;
   letter-spacing: 0.2vh;
   text-align: left;
-  /* margin-left: 5vh; */
   margin-right: 10vh
 }
 
 .about-text {
-  color: white;
+  color: rgb(0, 0, 0);
+  font-size: 2vh;
   font-weight:lighter;
 }
 
 .carousel-container {
   width: 30%;
+  height: 50%;
+  display: flex;
 }
 
 .carousel {
   width: 30%;
-
+  
 }
 
 .carousel-image {
 
 }
 
+.image-one-center {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.image-two {
+  height: 60vh;
+  object-fit: cover;
+  object-position: 20% 10%;
+  overflow: hidden;
+}
+
+.image-bell {
+  height: 60vh;
+  object-position: 20% 10%;
+  overflow: hidden;
+}
+
+.contact-text-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-text-title {
+  color: rgb(0, 0, 0);
+  font-size: 6vh;
+  font-weight:lighter;
+  margin: 5vh;
+}
+
+.contact-image-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.contact-image {  
+width: 90%;
+}  
+
+
+/* Moblie repsonsive */
+
+@media only screen and (max-width: 800px) {
+
+  .about-text-container {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .about-flex-wrapper {
+    width: 100%;
+  }
+
+  .about-flex-wrapper {
+  display: inline;
+  justify-content: center;
+  width: 100%;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .carousel {
+    width: 50%;  
+  }
+
+  
+
+  /* Gallery */
+
+  
+  .button-break {
+    color: black;
+    font-size: 3vh;
+    font-weight: lighter;
+    margin-left: 2.1vh;
+    margin-right: 2.1vh;
+  }
+  
+  .gallery-button {
+    margin-left: 2.1vh;
+    margin-right: 2.1vh;
+  }
+
+  .artwork-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .gallery-text-wrapper {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .gallery-text-title {
+    color: rgb(0, 0, 0);
+    font-size: 6vh;
+    font-weight:lighter;
+    text-align: center;
+  }
+  
+ 
+}
