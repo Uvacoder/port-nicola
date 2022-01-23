@@ -2,6 +2,8 @@ import React from "react";
 import Header from "./Header";
 
 import CarouselConatiner from "./CarouselConatiner";
+import Slider from "./Slider";
+import { SliderData } from "./SliderData";
 
 export default function About() {
   return (
@@ -30,7 +32,7 @@ export default function About() {
             Butchers.
           </p>
         </div>
-          <CarouselConatiner />
+          <Slider slides={SliderData}/>
       </div>
     </div>
     </div>

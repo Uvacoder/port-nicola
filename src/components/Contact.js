@@ -4,9 +4,6 @@ export default function Contact() {
   return (
     <div>
         <Header/>
-      <div className="contact-text-wrapper">
-        <h1 className="contact-text-title">Contact</h1>
-      </div>
       <div>
       <div className="contact-image-container">
         <img alt="monkeys" className="contact-image" src="./pictures/1.jpg"/>
