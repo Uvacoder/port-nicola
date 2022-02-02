@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 export default function Header() {
-  const [about, setAbout] = useState(true);
+
+  const [about, setAbout] = useState(false);
   const [gallery, setGallery] = useState(false);
   const [contact, setContact] = useState(false);
 
   const handleClick = (navigation) => {
+    console.log(navigation)
     if (navigation === "gallery") {
       setGallery(true);
       setAbout(false);
@@ -35,6 +37,9 @@ export default function Header() {
         </li>
         <div>
         <li className="header-list-item">
+          <div className="header-border"/> 
+        </li>
+        <li className="header-list-item">
           <Link
             to={"/about"}
             className={about ? "header-link-active" : "header-link"}
@@ -60,6 +65,9 @@ export default function Header() {
           >
             CONTACT
           </Link>
+        </li>
+        <li className="header-list-item">
+          <div className="header-border"/> 
         </li>
         </div>
       </ul>

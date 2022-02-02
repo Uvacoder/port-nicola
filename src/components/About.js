@@ -10,9 +10,6 @@ export default function About() {
     <div>
       <Header />
       <div className="about-page">
-      <div className="about-title-wrapper">
-        <h2 className="about-text-title">About</h2>
-      </div>
       <div className="about-flex-wrapper">
         <div className="about-text-container">
           <p className="about-text">

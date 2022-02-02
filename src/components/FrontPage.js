@@ -1,8 +1,12 @@
-import React from "react";
+import {React, useState} from "react";
 import { Link } from "react-router-dom";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Button from "@mui/material/Button";
+
+import { useTrail, a } from '@react-spring/web'
+
+import Trail from "./Trail";
 
 import BackgroundSlider from "react-background-slider";
 
@@ -25,8 +29,18 @@ const theme = createTheme({
 });
 
 export default function FrontPage() {
+
+  const [open, set] = useState(true)
+
   return (
     <div>
+      {/* <div className="front-page-wrapper"></div> */}
+             {/* <div className="container" onClick={() => set(state => !state)}>
+      <Trail open={open}>
+        <span>Nicola</span>
+        <span>Nicholas.</span>
+      </Trail>
+    </div> */}
       <BackgroundSlider
         images={[
           image1,
@@ -54,6 +68,8 @@ export default function FrontPage() {
           </Link>
         </ThemeProvider>
       </div>
+
     </div>
   );
 }
+
