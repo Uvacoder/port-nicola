@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 
-import CarouselConatiner from "./CarouselConatiner";
+//import CarouselConatiner from "./CarouselConatiner";
 import Slider from "./Slider";
 import { SliderData } from "./SliderData";
 
