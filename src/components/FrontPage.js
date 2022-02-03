@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 
-import { useTrail, a } from '@react-spring/web'
+//import { useTrail, a } from '@react-spring/web'
 
-import Trail from "./Trail";
+//import Trail from "./Trail";
 
 import BackgroundSlider from "react-background-slider";
 
