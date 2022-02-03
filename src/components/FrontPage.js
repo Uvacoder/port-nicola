@@ -30,7 +30,7 @@ const theme = createTheme({
 
 export default function FrontPage() {
 
-  const [open, set] = useState(true)
+  //const [open, set] = useState(true)
 
   return (
     <div>
