@@ -9,16 +9,16 @@ export default function CarouselConatiner() {
     <div className="carousel-container">
       <Carousel className="carousel" autoPlay={true} infiniteLoop={true} showArrows={false} showIndicators={false} showThumbs={false} centerMode={true} centerSlidePercentage={100}>
         <div>
-          <img  src="./pictures/1.jpg" />
+          <img  src="./pictures/1.jpg" alt='' />
         </div>
         <div>
-          <img  src="./pictures/Tucking in Team 2020.jpg" />
+          <img  src="./pictures/Tucking in Team 2020.jpg" alt='' />
         </div>
         <div className="image-bell">
-          <img  src="./pictures/66.jpg" />
+          <img  src="./pictures/66.jpg" alt='' />
         </div>
         <div className="image-two">
-          <img  src="./pictures/3.jpg" />
+          <img  src="./pictures/3.jpg" alt='' />
         </div>
       </Carousel>
     </div>
